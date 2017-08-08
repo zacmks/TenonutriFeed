@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45308AF4D89417B5E87569D5 /* Pods_TecnonutriFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */; };
+		6ACB4CA21F3982E1005133E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */; };
+		6ACB4CA41F3982E1005133E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA31F3982E1005133E7 /* ViewController.swift */; };
+		6ACB4CA71F3982E1005133E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA51F3982E1005133E7 /* Main.storyboard */; };
+		6ACB4CAA1F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */; };
+		6ACB4CAC1F3982E1005133E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */; };
+		6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */; };
+		6ACB4CBA1F3982E1005133E7 /* TecnonutriFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */; };
+		6ACB4CC51F3982E1005133E7 /* TecnonutriFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ACB4CB61F3982E1005133E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ACB4C961F3982E1005133E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACB4C9D1F3982E1005133E7;
+			remoteInfo = TecnonutriFeed;
+		};
+		6ACB4CC11F3982E1005133E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ACB4C961F3982E1005133E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACB4C9D1F3982E1005133E7;
+			remoteInfo = TecnonutriFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TecnonutriFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6ACB4CA31F3982E1005133E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6ACB4CA61F3982E1005133E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6ACB4CA91F3982E1005133E7 /* TecnonutriFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TecnonutriFeed.xcdatamodel; sourceTree = "<group>"; };
+		6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ACB4CAE1F3982E1005133E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6ACB4CB01F3982E1005133E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACB4CB51F3982E1005133E7 /* TecnonutriFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecnonutriFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnonutriFeedTests.swift; sourceTree = "<group>"; };
+		6ACB4CBB1F3982E1005133E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecnonutriFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnonutriFeedUITests.swift; sourceTree = "<group>"; };
+		6ACB4CC61F3982E1005133E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.release.xcconfig"; sourceTree = "<group>"; };
+		E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecnonutriFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ACB4C9B1F3982E1005133E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45308AF4D89417B5E87569D5 /* Pods_TecnonutriFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CB21F3982E1005133E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CBD1F3982E1005133E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E97698F0D3DD772421BF73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */,
+				959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6ACB4C951F3982E1005133E7 = {
+			isa = PBXGroup;
+			children = (
+				6ACB4CA01F3982E1005133E7 /* TecnonutriFeed */,
+				6ACB4CB81F3982E1005133E7 /* TecnonutriFeedTests */,
+				6ACB4CC31F3982E1005133E7 /* TecnonutriFeedUITests */,
+				6ACB4C9F1F3982E1005133E7 /* Products */,
+				03E97698F0D3DD772421BF73 /* Pods */,
+				C946D19412E37DDE89C4E663 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6ACB4C9F1F3982E1005133E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */,
+				6ACB4CB51F3982E1005133E7 /* TecnonutriFeedTests.xctest */,
+				6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ACB4CA01F3982E1005133E7 /* TecnonutriFeed */ = {
+			isa = PBXGroup;
+			children = (
+				6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */,
+				6ACB4CA31F3982E1005133E7 /* ViewController.swift */,
+				6ACB4CA51F3982E1005133E7 /* Main.storyboard */,
+				6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */,
+				6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */,
+				6ACB4CB01F3982E1005133E7 /* Info.plist */,
+				6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */,
+			);
+			path = TecnonutriFeed;
+			sourceTree = "<group>";
+		};
+		6ACB4CB81F3982E1005133E7 /* TecnonutriFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */,
+				6ACB4CBB1F3982E1005133E7 /* Info.plist */,
+			);
+			path = TecnonutriFeedTests;
+			sourceTree = "<group>";
+		};
+		6ACB4CC31F3982E1005133E7 /* TecnonutriFeedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */,
+				6ACB4CC61F3982E1005133E7 /* Info.plist */,
+			);
+			path = TecnonutriFeedUITests;
+			sourceTree = "<group>";
+		};
+		C946D19412E37DDE89C4E663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACB4CC91F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeed" */;
+			buildPhases = (
+				AA23045FB3FE2C11FD67BF4C /* [CP] Check Pods Manifest.lock */,
+				6ACB4C9A1F3982E1005133E7 /* Sources */,
+				6ACB4C9B1F3982E1005133E7 /* Frameworks */,
+				6ACB4C9C1F3982E1005133E7 /* Resources */,
+				13A437AA16CE008185A88175 /* [CP] Embed Pods Frameworks */,
+				40EED4EAFB653318647C1C70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TecnonutriFeed;
+			productName = TecnonutriFeed;
+			productReference = 6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ACB4CB41F3982E1005133E7 /* TecnonutriFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACB4CCC1F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeedTests" */;
+			buildPhases = (
+				6ACB4CB11F3982E1005133E7 /* Sources */,
+				6ACB4CB21F3982E1005133E7 /* Frameworks */,
+				6ACB4CB31F3982E1005133E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ACB4CB71F3982E1005133E7 /* PBXTargetDependency */,
+			);
+			name = TecnonutriFeedTests;
+			productName = TecnonutriFeedTests;
+			productReference = 6ACB4CB51F3982E1005133E7 /* TecnonutriFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6ACB4CBF1F3982E1005133E7 /* TecnonutriFeedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACB4CCF1F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeedUITests" */;
+			buildPhases = (
+				6ACB4CBC1F3982E1005133E7 /* Sources */,
+				6ACB4CBD1F3982E1005133E7 /* Frameworks */,
+				6ACB4CBE1F3982E1005133E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ACB4CC21F3982E1005133E7 /* PBXTargetDependency */,
+			);
+			name = TecnonutriFeedUITests;
+			productName = TecnonutriFeedUITests;
+			productReference = 6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ACB4C961F3982E1005133E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Isaac Mitsuaki Saito";
+				TargetAttributes = {
+					6ACB4C9D1F3982E1005133E7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					6ACB4CB41F3982E1005133E7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6ACB4C9D1F3982E1005133E7;
+					};
+					6ACB4CBF1F3982E1005133E7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6ACB4C9D1F3982E1005133E7;
+					};
+				};
+			};
+			buildConfigurationList = 6ACB4C991F3982E1005133E7 /* Build configuration list for PBXProject "TecnonutriFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ACB4C951F3982E1005133E7;
+			productRefGroup = 6ACB4C9F1F3982E1005133E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */,
+				6ACB4CB41F3982E1005133E7 /* TecnonutriFeedTests */,
+				6ACB4CBF1F3982E1005133E7 /* TecnonutriFeedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ACB4C9C1F3982E1005133E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */,
+				6ACB4CAC1F3982E1005133E7 /* Assets.xcassets in Resources */,
+				6ACB4CA71F3982E1005133E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CB31F3982E1005133E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CBE1F3982E1005133E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13A437AA16CE008185A88175 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40EED4EAFB653318647C1C70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA23045FB3FE2C11FD67BF4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TecnonutriFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ACB4C9A1F3982E1005133E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB4CA41F3982E1005133E7 /* ViewController.swift in Sources */,
+				6ACB4CA21F3982E1005133E7 /* AppDelegate.swift in Sources */,
+				6ACB4CAA1F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CB11F3982E1005133E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB4CBA1F3982E1005133E7 /* TecnonutriFeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACB4CBC1F3982E1005133E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB4CC51F3982E1005133E7 /* TecnonutriFeedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ACB4CB71F3982E1005133E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */;
+			targetProxy = 6ACB4CB61F3982E1005133E7 /* PBXContainerItemProxy */;
+		};
+		6ACB4CC21F3982E1005133E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */;
+			targetProxy = 6ACB4CC11F3982E1005133E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6ACB4CA51F3982E1005133E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ACB4CA61F3982E1005133E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ACB4CAE1F3982E1005133E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6ACB4CC71F3982E1005133E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ACB4CC81F3982E1005133E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ACB4CCA1F3982E1005133E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6ACB4CCB1F3982E1005133E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6ACB4CCD1F3982E1005133E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TecnonutriFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecnonutriFeed.app/TecnonutriFeed";
+			};
+			name = Debug;
+		};
+		6ACB4CCE1F3982E1005133E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TecnonutriFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecnonutriFeed.app/TecnonutriFeed";
+			};
+			name = Release;
+		};
+		6ACB4CD01F3982E1005133E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TecnonutriFeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TecnonutriFeed;
+			};
+			name = Debug;
+		};
+		6ACB4CD11F3982E1005133E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TecnonutriFeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TecnonutriFeed;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ACB4C991F3982E1005133E7 /* Build configuration list for PBXProject "TecnonutriFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACB4CC71F3982E1005133E7 /* Debug */,
+				6ACB4CC81F3982E1005133E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACB4CC91F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACB4CCA1F3982E1005133E7 /* Debug */,
+				6ACB4CCB1F3982E1005133E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACB4CCC1F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACB4CCD1F3982E1005133E7 /* Debug */,
+				6ACB4CCE1F3982E1005133E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACB4CCF1F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACB4CD01F3982E1005133E7 /* Debug */,
+				6ACB4CD11F3982E1005133E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ACB4CA91F3982E1005133E7 /* TecnonutriFeed.xcdatamodel */,
+			);
+			currentVersion = 6ACB4CA91F3982E1005133E7 /* TecnonutriFeed.xcdatamodel */;
+			path = TecnonutriFeed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6ACB4C961F3982E1005133E7 /* Project object */;
+}
