@@ -8,14 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		45308AF4D89417B5E87569D5 /* Pods_TecnonutriFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */; };
+		5FD622283F765E3E3F8006DE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622BCAB503D83D46F855B /* ApiClient.swift */; };
+		5FD6230A84A99AD07C77F9B9 /* FeedDisplayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */; };
+		5FD6267AAF588E6F7F395374 /* UIViewContoller-Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */; };
+		5FD626D41AA4E84D19C6413B /* FeedItemManagerDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */; };
+		5FD62825E3BFEC7A19F7E411 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622D4AD51D606BB47416D /* FeedItem.swift */; };
+		5FD628A7F1A706841C5D84F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6250E48CC86CC5697CBF4 /* Main.storyboard */; };
+		5FD62B1BC7BCFCBA7161E553 /* FeedSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */; };
+		5FD62C7F63960804081BD3AE /* ViewSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */; };
+		5FD62D38C8DE5B422016EB9C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62097E97286C3653750B6 /* Profile.swift */; };
+		5FD62D629F2E42AD605211C6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */; };
+		5FD62D8068476BED4D240164 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625828291BE918B7C6DEA /* Result.swift */; };
+		5FD62E5DDBFCBF9F886E1B59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */; };
+		5FD62EFBA8CAF4CF00E3E650 /* FeedItemManagerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */; };
+		5FD62FEE83867E9FCDC36FCF /* FeedItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6247940008602A38F27FB /* FeedItemManager.swift */; };
+		6A545E421F3C1CB400DBC713 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */; };
+		6AC963561F3AB04F0010231D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */; };
+		6AC963571F3AB04F0010231D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */; };
+		6AC9635B1F3B74D80010231D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9635A1F3B74D80010231D /* FeedViewController.swift */; };
 		6ACB4CA21F3982E1005133E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */; };
-		6ACB4CA41F3982E1005133E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA31F3982E1005133E7 /* ViewController.swift */; };
-		6ACB4CA71F3982E1005133E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA51F3982E1005133E7 /* Main.storyboard */; };
 		6ACB4CAA1F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */; };
 		6ACB4CAC1F3982E1005133E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */; };
 		6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */; };
 		6ACB4CBA1F3982E1005133E7 /* TecnonutriFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */; };
 		6ACB4CC51F3982E1005133E7 /* TecnonutriFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */; };
+		C7897AF2D5D850849CFDB2EF /* Pods_TecnonutriFeedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782278787751C7FF6115CB69 /* Pods_TecnonutriFeedTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +53,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EE980CF775D67D41F8A1913 /* Pods-TecnonutriFeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedSwitcher.swift; sourceTree = "<group>"; };
+		5FD62097E97286C3653750B6 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		5FD622BCAB503D83D46F855B /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		5FD622D4AD51D606BB47416D /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManagerDB.swift; sourceTree = "<group>"; };
+		5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManagerAPI.swift; sourceTree = "<group>"; };
+		5FD6247940008602A38F27FB /* FeedItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManager.swift; sourceTree = "<group>"; };
+		5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSwitcher.swift; sourceTree = "<group>"; };
+		5FD625828291BE918B7C6DEA /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDisplayAction.swift; sourceTree = "<group>"; };
+		5FD6264597ABE96617D3B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TecnonutriFeed/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewContoller-Alert.swift"; sourceTree = "<group>"; };
+		6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		6AC9635A1F3B74D80010231D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TecnonutriFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6ACB4CA31F3982E1005133E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6ACB4CA61F3982E1005133E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ACB4CA91F3982E1005133E7 /* TecnonutriFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TecnonutriFeed.xcdatamodel; sourceTree = "<group>"; };
 		6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ACB4CAE1F3982E1005133E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,8 +84,10 @@
 		6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecnonutriFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnonutriFeedUITests.swift; sourceTree = "<group>"; };
 		6ACB4CC61F3982E1005133E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782278787751C7FF6115CB69 /* Pods_TecnonutriFeedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecnonutriFeedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.release.xcconfig"; sourceTree = "<group>"; };
+		9F02D14D6E198189668E8E3F /* Pods-TecnonutriFeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecnonutriFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7897AF2D5D850849CFDB2EF /* Pods_TecnonutriFeedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +123,119 @@
 			children = (
 				948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */,
 				959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */,
+				9F02D14D6E198189668E8E3F /* Pods-TecnonutriFeedTests.debug.xcconfig */,
+				5EE980CF775D67D41F8A1913 /* Pods-TecnonutriFeedTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FD6217052A4EC459AC1D9BE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6296A3A6EADDAD2B1CBEE /* Network */,
+				5FD622BCAB503D83D46F855B /* ApiClient.swift */,
+				5FD628BB836C8CFA7005EFC1 /* DB */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5FD621779C41653E79E174CC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */,
+				6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */,
+				6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */,
+				6AC9635A1F3B74D80010231D /* FeedViewController.swift */,
+				5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		5FD623D1B017C25691F4F0EB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6278A4D021428707003EE /* Entity */,
+				5FD6282254ABA3DF4B866042 /* Action */,
+				5FD625828291BE918B7C6DEA /* Result.swift */,
+				5FD623F2332803AA8990A308 /* Manager */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5FD623F2332803AA8990A308 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6247940008602A38F27FB /* FeedItemManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5FD6253DBE1E192A3C98BAB9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5FD621779C41653E79E174CC /* Feed */,
+				5FD626EFF7839051CE89755A /* ItemDetails */,
+				5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */,
+				5FD6250E48CC86CC5697CBF4 /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5FD626EFF7839051CE89755A /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */,
+			);
+			path = ItemDetails;
+			sourceTree = "<group>";
+		};
+		5FD6278A4D021428707003EE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5FD622D4AD51D606BB47416D /* FeedItem.swift */,
+				5FD62097E97286C3653750B6 /* Profile.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5FD6282254ABA3DF4B866042 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		5FD6286F949F1BEC9B15DBA0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5FD628BB836C8CFA7005EFC1 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5FD6296A3A6EADDAD2B1CBEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5FD62DC19D6102DAF007CBB0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */,
+				5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		6ACB4C951F3982E1005133E7 = {
@@ -116,12 +264,14 @@
 			isa = PBXGroup;
 			children = (
 				6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */,
-				6ACB4CA31F3982E1005133E7 /* ViewController.swift */,
-				6ACB4CA51F3982E1005133E7 /* Main.storyboard */,
 				6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */,
 				6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */,
 				6ACB4CB01F3982E1005133E7 /* Info.plist */,
 				6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */,
+				5FD623D1B017C25691F4F0EB /* Domain */,
+				5FD6253DBE1E192A3C98BAB9 /* Presentation */,
+				5FD6217052A4EC459AC1D9BE /* Data */,
+				5FD62DC19D6102DAF007CBB0 /* Helper */,
 			);
 			path = TecnonutriFeed;
 			sourceTree = "<group>";
@@ -131,6 +281,7 @@
 			children = (
 				6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */,
 				6ACB4CBB1F3982E1005133E7 /* Info.plist */,
+				5FD6286F949F1BEC9B15DBA0 /* Entities */,
 			);
 			path = TecnonutriFeedTests;
 			sourceTree = "<group>";
@@ -148,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */,
+				782278787751C7FF6115CB69 /* Pods_TecnonutriFeedTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ACB4CCC1F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeedTests" */;
 			buildPhases = (
+				FDC37F3618E58E81FFB34E3F /* [CP] Check Pods Manifest.lock */,
 				6ACB4CB11F3982E1005133E7 /* Sources */,
 				6ACB4CB21F3982E1005133E7 /* Frameworks */,
 				6ACB4CB31F3982E1005133E7 /* Resources */,
+				C3F5F9F55DA9EBB58478CC0A /* [CP] Embed Pods Frameworks */,
+				547A027F384F726546CB84FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,8 +418,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */,
+				6AC963571F3AB04F0010231D /* FeedTableViewCell.xib in Resources */,
 				6ACB4CAC1F3982E1005133E7 /* Assets.xcassets in Resources */,
-				6ACB4CA71F3982E1005133E7 /* Main.storyboard in Resources */,
+				5FD628A7F1A706841C5D84F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +451,18 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,6 +484,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		547A027F384F726546CB84FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AA23045FB3FE2C11FD67BF4C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +517,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3F5F9F55DA9EBB58478CC0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC37F3618E58E81FFB34E3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TecnonutriFeedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -347,9 +570,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ACB4CA41F3982E1005133E7 /* ViewController.swift in Sources */,
 				6ACB4CA21F3982E1005133E7 /* AppDelegate.swift in Sources */,
+				6AC963561F3AB04F0010231D /* FeedTableViewCell.swift in Sources */,
+				6A545E421F3C1CB400DBC713 /* ItemDetailsViewController.swift in Sources */,
 				6ACB4CAA1F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld in Sources */,
+				5FD62825E3BFEC7A19F7E411 /* FeedItem.swift in Sources */,
+				5FD62D38C8DE5B422016EB9C /* Profile.swift in Sources */,
+				5FD62D629F2E42AD605211C6 /* FeedPresenter.swift in Sources */,
+				5FD62E5DDBFCBF9F886E1B59 /* MainViewController.swift in Sources */,
+				5FD622283F765E3E3F8006DE /* ApiClient.swift in Sources */,
+				5FD62EFBA8CAF4CF00E3E650 /* FeedItemManagerAPI.swift in Sources */,
+				6AC9635B1F3B74D80010231D /* FeedViewController.swift in Sources */,
+				5FD626D41AA4E84D19C6413B /* FeedItemManagerDB.swift in Sources */,
+				5FD6230A84A99AD07C77F9B9 /* FeedDisplayAction.swift in Sources */,
+				5FD62D8068476BED4D240164 /* Result.swift in Sources */,
+				5FD6267AAF588E6F7F395374 /* UIViewContoller-Alert.swift in Sources */,
+				5FD62FEE83867E9FCDC36FCF /* FeedItemManager.swift in Sources */,
+				5FD62C7F63960804081BD3AE /* ViewSwitcher.swift in Sources */,
+				5FD62B1BC7BCFCBA7161E553 /* FeedSwitcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,10 +623,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6ACB4CA51F3982E1005133E7 /* Main.storyboard */ = {
+		5FD6250E48CC86CC5697CBF4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6ACB4CA61F3982E1005133E7 /* Base */,
+				5FD6264597ABE96617D3B479 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -527,6 +765,7 @@
 		};
 		6ACB4CCD1F3982E1005133E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F02D14D6E198189668E8E3F /* Pods-TecnonutriFeedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +780,7 @@
 		};
 		6ACB4CCE1F3982E1005133E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE980CF775D67D41F8A1913 /* Pods-TecnonutriFeedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -5,4 +5,11 @@ use_frameworks!
 target 'TecnonutriFeed' do
     pod 'Alamofire'
     pod 'RealmSwift'
+    pod 'YYWebImage'
+end
+
+target 'TecnonutriFeedTests' do
+    pod 'Alamofire'
+    pod 'RealmSwift'
+    pod 'YYWebImage'
 end
