@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TecnonutriFeed
+
+  Created by Isaac Mitsuaki Saito on 12/08/2017.
+  Copyright © 2017 Isaac Mitsuaki Saito. All rights reserved.
+*/
+
+// General, UI (buttons, etc)
+"Dismiss" = "Fechar";
+"Ok" = "Ok";
+"Error" = "Erro";
+
+
+
+// Data
+"Error fetching Feed Item details" = "Erro ao obter detalhes do Item do Feed";
+
+// Presentation
+"%@ Meal" = "Refeição de %@";

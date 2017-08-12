@@ -6,15 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="3Gz-hm-xLu">
             <objects>
-                <navigationController id="JYb-9B-bdu" customClass="MainViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hez-gf-B4G">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYb-9B-bdu" customClass="MainViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Hez-gf-B4G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -29,18 +29,18 @@
         <!--Tecnonutri Feed-->
         <scene sceneID="u3v-D5-VXB">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FTo-Dx-Z6e" customClass="FeedViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FTo-Dx-Z6e" customClass="FeedViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMV-Dh-lTB"/>
                         <viewControllerLayoutGuide type="bottom" id="HDC-Gr-Mdz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sao-ga-ufl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Uus-U9-PR8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
                             </tableView>
                         </subviews>
@@ -51,7 +51,11 @@
                             <constraint firstItem="Uus-U9-PR8" firstAttribute="top" secondItem="KMV-Dh-lTB" secondAttribute="bottom" id="qIE-TH-FyT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tecnonutri Feed" id="VIw-f8-La0"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Tecnonutri Feed" id="VIw-f8-La0">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Qu9-Sf-c69"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="Uus-U9-PR8" id="msO-8l-aEa"/>
                         <segue destination="lXV-nC-9lt" kind="show" identifier="FeedToItemDetailsSegue" id="IJZ-bS-TJh"/>
@@ -61,35 +65,41 @@
             </objects>
             <point key="canvasLocation" x="1752.8" y="188.45577211394306"/>
         </scene>
-        <!--Item Details View Controller-->
+        <!--Feed Item Details View Controller-->
         <scene sceneID="Alg-uY-2Xi">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lXV-nC-9lt" customClass="ItemDetailsViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lXV-nC-9lt" customClass="FeedItemDetailsViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OS3-4a-pRJ"/>
                         <viewControllerLayoutGuide type="bottom" id="pln-PF-oJ1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QLd-qX-1bA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G9O-RA-HxG">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="G9O-RA-HxG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="G9O-RA-HxG" firstAttribute="leading" secondItem="QLd-qX-1bA" secondAttribute="leadingMargin" id="Nz0-cp-g02"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="G9O-RA-HxG" secondAttribute="trailing" id="WjL-fk-upk"/>
+                            <constraint firstItem="G9O-RA-HxG" firstAttribute="leading" secondItem="QLd-qX-1bA" secondAttribute="leading" id="GNg-kJ-K7M"/>
+                            <constraint firstAttribute="trailing" secondItem="G9O-RA-HxG" secondAttribute="trailing" id="cTg-9A-5o0"/>
                             <constraint firstItem="pln-PF-oJ1" firstAttribute="top" secondItem="G9O-RA-HxG" secondAttribute="bottom" id="tRG-Uo-BAa"/>
                             <constraint firstItem="G9O-RA-HxG" firstAttribute="top" secondItem="OS3-4a-pRJ" secondAttribute="bottom" id="x2M-uC-cJp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="G9O-RA-HxG" id="urK-MA-eOv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPQ-Pp-O0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="188"/>
+            <point key="canvasLocation" x="2581.5999999999999" y="187.55622188905548"/>
         </scene>
     </scenes>
 </document>

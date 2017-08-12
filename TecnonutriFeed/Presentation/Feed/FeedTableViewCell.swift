@@ -18,6 +18,10 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var itemDateLabel: UILabel!
     @IBOutlet weak var itemEnergyLabel: UILabel!
     
+    @IBOutlet weak var likeButton: LikeButton!
+    
+    @IBOutlet weak var bottomView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

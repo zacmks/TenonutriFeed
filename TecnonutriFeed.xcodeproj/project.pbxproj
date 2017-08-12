@@ -3,26 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B99BE31CA295C9D64AEA9E4 /* Pods_TecnonutriFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */; };
 		45308AF4D89417B5E87569D5 /* Pods_TecnonutriFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */; };
 		5FD622283F765E3E3F8006DE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622BCAB503D83D46F855B /* ApiClient.swift */; };
 		5FD6230A84A99AD07C77F9B9 /* FeedDisplayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */; };
+		5FD623955DFA1A949D9421E6 /* FeedLoadPageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62F7CF15D57AE9E734C4E /* FeedLoadPageAction.swift */; };
+		5FD626300F8E5C8FA790A8FE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62C2F0A266CDD3F52FDFC /* Utils.swift */; };
 		5FD6267AAF588E6F7F395374 /* UIViewContoller-Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */; };
 		5FD626D41AA4E84D19C6413B /* FeedItemManagerDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */; };
+		5FD627EFF431F4B0943D205B /* FeedItemDetailsDisplayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD626609CA5629C3B3B5AF3 /* FeedItemDetailsDisplayAction.swift */; };
 		5FD62825E3BFEC7A19F7E411 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622D4AD51D606BB47416D /* FeedItem.swift */; };
 		5FD628A7F1A706841C5D84F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6250E48CC86CC5697CBF4 /* Main.storyboard */; };
+		5FD6294F91CDB32A8CED0038 /* FeedItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62328DF582344374B4EB6 /* FeedItemDetailsPresenter.swift */; };
+		5FD629C4F5F75214D6C47C23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62CB7E488ED900E2B4129 /* Constants.swift */; };
 		5FD62B1BC7BCFCBA7161E553 /* FeedSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */; };
+		5FD62B73A82D6EFD6E5FF8DA /* FeedItemLikeDislikeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62268EEDF12E51BBCB158 /* FeedItemLikeDislikeAction.swift */; };
 		5FD62C7F63960804081BD3AE /* ViewSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */; };
 		5FD62D38C8DE5B422016EB9C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62097E97286C3653750B6 /* Profile.swift */; };
 		5FD62D629F2E42AD605211C6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */; };
 		5FD62D8068476BED4D240164 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625828291BE918B7C6DEA /* Result.swift */; };
 		5FD62E5DDBFCBF9F886E1B59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */; };
+		5FD62EE1F94DE3ACC909F69C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62FC8D6828DE1A1997556 /* Food.swift */; };
 		5FD62EFBA8CAF4CF00E3E650 /* FeedItemManagerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */; };
 		5FD62FEE83867E9FCDC36FCF /* FeedItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6247940008602A38F27FB /* FeedItemManager.swift */; };
-		6A545E421F3C1CB400DBC713 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */; };
+		6A02C5791F3FAEA5009C16DD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A02C5781F3FAEA5009C16DD /* Theme.swift */; };
+		6A4AD02F1F3FB05700FAEA2A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A02C5781F3FAEA5009C16DD /* Theme.swift */; };
+		6A4AD0301F3FB7F300FAEA2A /* Pods_TecnonutriFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */; };
+		6A545E421F3C1CB400DBC713 /* FeedItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E411F3C1CB400DBC713 /* FeedItemDetailsViewController.swift */; };
+		6A545E441F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E431F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift */; };
+		6A545E461F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A545E451F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib */; };
+		6A6D59161F3F9BC600F744DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */; };
+		6A6D59171F3F9BC600F744DC /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */; };
+		6A6D59181F3F9BC600F744DC /* FeedItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E411F3C1CB400DBC713 /* FeedItemDetailsViewController.swift */; };
+		6A6D59191F3F9BC600F744DC /* TecnonutriFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CA81F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld */; };
+		6A6D591A1F3F9BC600F744DC /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622D4AD51D606BB47416D /* FeedItem.swift */; };
+		6A6D591B1F3F9BC600F744DC /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A30C1F3E2F1000D4725A /* FoodTableViewCell.swift */; };
+		6A6D591C1F3F9BC600F744DC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62097E97286C3653750B6 /* Profile.swift */; };
+		6A6D591D1F3F9BC600F744DC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */; };
+		6A6D591E1F3F9BC600F744DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */; };
+		6A6D591F1F3F9BC600F744DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD622BCAB503D83D46F855B /* ApiClient.swift */; };
+		6A6D59201F3F9BC600F744DC /* FeedItemManagerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */; };
+		6A6D59211F3F9BC600F744DC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9635A1F3B74D80010231D /* FeedViewController.swift */; };
+		6A6D59221F3F9BC600F744DC /* FeedItemDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A545E431F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift */; };
+		6A6D59231F3F9BC600F744DC /* FeedItemManagerDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */; };
+		6A6D59241F3F9BC600F744DC /* FeedDisplayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */; };
+		6A6D59251F3F9BC600F744DC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625828291BE918B7C6DEA /* Result.swift */; };
+		6A6D59261F3F9BC600F744DC /* UIViewContoller-Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */; };
+		6A6D59271F3F9BC600F744DC /* FeedItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6247940008602A38F27FB /* FeedItemManager.swift */; };
+		6A6D59281F3F9BC600F744DC /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A3101F3E91C300D4725A /* LikeButton.swift */; };
+		6A6D59291F3F9BC600F744DC /* ViewSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */; };
+		6A6D592A1F3F9BC600F744DC /* FeedItemDetailsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A30A1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift */; };
+		6A6D592B1F3F9BC600F744DC /* FeedSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */; };
+		6A6D592C1F3F9BC600F744DC /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62FC8D6828DE1A1997556 /* Food.swift */; };
+		6A6D592D1F3F9BC600F744DC /* FeedItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62328DF582344374B4EB6 /* FeedItemDetailsPresenter.swift */; };
+		6A6D592E1F3F9BC600F744DC /* FeedItemDetailsDisplayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD626609CA5629C3B3B5AF3 /* FeedItemDetailsDisplayAction.swift */; };
+		6A6D592F1F3F9BC600F744DC /* FeedItemLikeDislikeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62268EEDF12E51BBCB158 /* FeedItemLikeDislikeAction.swift */; };
+		6A6D59301F3F9BC600F744DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62CB7E488ED900E2B4129 /* Constants.swift */; };
+		6A6D59311F3F9BC600F744DC /* FeedLoadPageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62F7CF15D57AE9E734C4E /* FeedLoadPageAction.swift */; };
+		6A6D59321F3F9BC600F744DC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62C2F0A266CDD3F52FDFC /* Utils.swift */; };
+		6A6D59361F3F9BC600F744DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A32D1F3F11B300D4725A /* Images.xcassets */; };
+		6A6D59371F3F9BC600F744DC /* FeedItemDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A545E451F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib */; };
+		6A6D59381F3F9BC600F744DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */; };
+		6A6D59391F3F9BC600F744DC /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */; };
+		6A6D593A1F3F9BC600F744DC /* FeedItemDetailsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A3251F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib */; };
+		6A6D593B1F3F9BC600F744DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */; };
+		6A6D593C1F3F9BC600F744DC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A3191F3EB30B00D4725A /* Localizable.strings */; };
+		6A6D593D1F3F9BC600F744DC /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A31D1F3EC2F400D4725A /* FoodTableViewCell.xib */; };
+		6A6D593E1F3F9BC600F744DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6250E48CC86CC5697CBF4 /* Main.storyboard */; };
 		6AC963561F3AB04F0010231D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */; };
 		6AC963571F3AB04F0010231D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */; };
 		6AC9635B1F3B74D80010231D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9635A1F3B74D80010231D /* FeedViewController.swift */; };
@@ -32,6 +83,13 @@
 		6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4CAD1F3982E1005133E7 /* LaunchScreen.storyboard */; };
 		6ACB4CBA1F3982E1005133E7 /* TecnonutriFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */; };
 		6ACB4CC51F3982E1005133E7 /* TecnonutriFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */; };
+		6AE3A30B1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A30A1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift */; };
+		6AE3A30E1F3E2F1000D4725A /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A30C1F3E2F1000D4725A /* FoodTableViewCell.swift */; };
+		6AE3A3111F3E91C300D4725A /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A3101F3E91C300D4725A /* LikeButton.swift */; };
+		6AE3A3171F3EB30B00D4725A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A3191F3EB30B00D4725A /* Localizable.strings */; };
+		6AE3A31B1F3EC2F400D4725A /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A31D1F3EC2F400D4725A /* FoodTableViewCell.xib */; };
+		6AE3A3231F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A3251F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib */; };
+		6AE3A32E1F3F11B300D4725A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A32D1F3F11B300D4725A /* Images.xcassets */; };
 		C7897AF2D5D850849CFDB2EF /* Pods_TecnonutriFeedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782278787751C7FF6115CB69 /* Pods_TecnonutriFeedTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,26 +111,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3789C13107D1D3B8E84223BB /* Pods-TecnonutriFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		567DE5A738AD9852DFA06AB4 /* Pods-TecnonutriFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.release.xcconfig"; sourceTree = "<group>"; };
 		5EE980CF775D67D41F8A1913 /* Pods-TecnonutriFeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests.release.xcconfig"; sourceTree = "<group>"; };
 		5FD6207DD2D5E9717168ED92 /* FeedSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedSwitcher.swift; sourceTree = "<group>"; };
 		5FD62097E97286C3653750B6 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5FD62217088BCF8DBFF5D64D /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		5FD62268EEDF12E51BBCB158 /* FeedItemLikeDislikeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemLikeDislikeAction.swift; sourceTree = "<group>"; };
 		5FD622BCAB503D83D46F855B /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5FD622D4AD51D606BB47416D /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		5FD623085BB6BBF6BCCB8239 /* FeedItemManagerDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManagerDB.swift; sourceTree = "<group>"; };
 		5FD6231F00A426022106CA03 /* FeedItemManagerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManagerAPI.swift; sourceTree = "<group>"; };
+		5FD62328DF582344374B4EB6 /* FeedItemDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsPresenter.swift; sourceTree = "<group>"; };
 		5FD6247940008602A38F27FB /* FeedItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManager.swift; sourceTree = "<group>"; };
 		5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSwitcher.swift; sourceTree = "<group>"; };
 		5FD625828291BE918B7C6DEA /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDisplayAction.swift; sourceTree = "<group>"; };
 		5FD6264597ABE96617D3B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TecnonutriFeed/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		5FD626609CA5629C3B3B5AF3 /* FeedItemDetailsDisplayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsDisplayAction.swift; sourceTree = "<group>"; };
 		5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewContoller-Alert.swift"; sourceTree = "<group>"; };
-		6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		5FD62C2F0A266CDD3F52FDFC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5FD62CB7E488ED900E2B4129 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5FD62F7CF15D57AE9E734C4E /* FeedLoadPageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoadPageAction.swift; sourceTree = "<group>"; };
+		5FD62FC8D6828DE1A1997556 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		6A02C5781F3FAEA5009C16DD /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6A545E411F3C1CB400DBC713 /* FeedItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsViewController.swift; sourceTree = "<group>"; };
+		6A545E431F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsHeaderView.swift; sourceTree = "<group>"; };
+		6A545E451F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemDetailsHeaderView.xib; sourceTree = "<group>"; };
+		6A6D59441F3F9BC600F744DC /* TecnonutriFeed Cyan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TecnonutriFeed Cyan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6D59451F3F9BC600F744DC /* TecnonutriFeed Cyan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TecnonutriFeed Cyan-Info.plist"; path = "/Users/isaac/Projects/iOS/TecnonutriFeed/TecnonutriFeed Cyan-Info.plist"; sourceTree = "<absolute>"; };
 		6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		6AC9635A1F3B74D80010231D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TecnonutriFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACB4C9E1F3982E1005133E7 /* Tecnutri Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tecnutri Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB4CA11F3982E1005133E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ACB4CA91F3982E1005133E7 /* TecnonutriFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TecnonutriFeed.xcdatamodel; sourceTree = "<group>"; };
 		6ACB4CAB1F3982E1005133E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,19 +156,38 @@
 		6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecnonutriFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB4CC41F3982E1005133E7 /* TecnonutriFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnonutriFeedUITests.swift; sourceTree = "<group>"; };
 		6ACB4CC61F3982E1005133E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE3A30A1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsFooterView.swift; sourceTree = "<group>"; };
+		6AE3A30C1F3E2F1000D4725A /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		6AE3A3101F3E91C300D4725A /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		6AE3A3181F3EB30B00D4725A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6AE3A31A1F3EB32000D4725A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6AE3A31E1F3EC2F900D4725A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FoodTableViewCell.xib; sourceTree = "<group>"; };
+		6AE3A3201F3EC32900D4725A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/FoodTableViewCell.strings"; sourceTree = "<group>"; };
+		6AE3A3221F3EC38100D4725A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FoodTableViewCell.strings; sourceTree = "<group>"; };
+		6AE3A3241F3EC3EF00D4725A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FeedItemDetailsFooterView.xib; sourceTree = "<group>"; };
+		6AE3A3271F3EC3F000D4725A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FeedItemDetailsFooterView.strings; sourceTree = "<group>"; };
+		6AE3A3291F3EC3F100D4725A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/FeedItemDetailsFooterView.strings"; sourceTree = "<group>"; };
+		6AE3A32D1F3F11B300D4725A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		782278787751C7FF6115CB69 /* Pods_TecnonutriFeedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecnonutriFeedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.debug.xcconfig"; sourceTree = "<group>"; };
-		959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeed/Pods-TecnonutriFeed.release.xcconfig"; sourceTree = "<group>"; };
 		9F02D14D6E198189668E8E3F /* Pods-TecnonutriFeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecnonutriFeedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E06F2DB04E7907383228CFA3 /* Pods_TecnonutriFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecnonutriFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A6D59331F3F9BC600F744DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A4AD0301F3FB7F300FAEA2A /* Pods_TecnonutriFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ACB4C9B1F3982E1005133E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				45308AF4D89417B5E87569D5 /* Pods_TecnonutriFeed.framework in Frameworks */,
+				2B99BE31CA295C9D64AEA9E4 /* Pods_TecnonutriFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +212,10 @@
 		03E97698F0D3DD772421BF73 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */,
-				959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */,
 				9F02D14D6E198189668E8E3F /* Pods-TecnonutriFeedTests.debug.xcconfig */,
 				5EE980CF775D67D41F8A1913 /* Pods-TecnonutriFeedTests.release.xcconfig */,
+				3789C13107D1D3B8E84223BB /* Pods-TecnonutriFeed.debug.xcconfig */,
+				567DE5A738AD9852DFA06AB4 /* Pods-TecnonutriFeed.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,8 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				5FD6296A3A6EADDAD2B1CBEE /* Network */,
-				5FD622BCAB503D83D46F855B /* ApiClient.swift */,
 				5FD628BB836C8CFA7005EFC1 /* DB */,
+				5FD622BCAB503D83D46F855B /* ApiClient.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -175,8 +266,10 @@
 			children = (
 				5FD621779C41653E79E174CC /* Feed */,
 				5FD626EFF7839051CE89755A /* ItemDetails */,
+				5FD62C20CCE3503AE18EEF35 /* Custom */,
 				5FD6280EFB1293F103BE5AE8 /* MainViewController.swift */,
 				5FD6250E48CC86CC5697CBF4 /* Main.storyboard */,
+				6A02C5781F3FAEA5009C16DD /* Theme.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -184,7 +277,14 @@
 		5FD626EFF7839051CE89755A /* ItemDetails */ = {
 			isa = PBXGroup;
 			children = (
-				6A545E411F3C1CB400DBC713 /* ItemDetailsViewController.swift */,
+				6A545E411F3C1CB400DBC713 /* FeedItemDetailsViewController.swift */,
+				6A545E431F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift */,
+				6A545E451F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib */,
+				5FD62328DF582344374B4EB6 /* FeedItemDetailsPresenter.swift */,
+				6AE3A3251F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib */,
+				6AE3A30A1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift */,
+				6AE3A30C1F3E2F1000D4725A /* FoodTableViewCell.swift */,
+				6AE3A31D1F3EC2F400D4725A /* FoodTableViewCell.xib */,
 			);
 			path = ItemDetails;
 			sourceTree = "<group>";
@@ -194,6 +294,7 @@
 			children = (
 				5FD622D4AD51D606BB47416D /* FeedItem.swift */,
 				5FD62097E97286C3653750B6 /* Profile.swift */,
+				5FD62FC8D6828DE1A1997556 /* Food.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -202,6 +303,9 @@
 			isa = PBXGroup;
 			children = (
 				5FD625879D351E84C18F7013 /* FeedDisplayAction.swift */,
+				5FD626609CA5629C3B3B5AF3 /* FeedItemDetailsDisplayAction.swift */,
+				5FD62268EEDF12E51BBCB158 /* FeedItemLikeDislikeAction.swift */,
+				5FD62F7CF15D57AE9E734C4E /* FeedLoadPageAction.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -229,11 +333,20 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		5FD62C20CCE3503AE18EEF35 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A3101F3E91C300D4725A /* LikeButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		5FD62DC19D6102DAF007CBB0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				5FD62B6DD4C01EDD31F542E4 /* UIViewContoller-Alert.swift */,
 				5FD62534144D2E7AAE578946 /* ViewSwitcher.swift */,
+				5FD62C2F0A266CDD3F52FDFC /* Utils.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -247,15 +360,17 @@
 				6ACB4C9F1F3982E1005133E7 /* Products */,
 				03E97698F0D3DD772421BF73 /* Pods */,
 				C946D19412E37DDE89C4E663 /* Frameworks */,
+				6A6D59451F3F9BC600F744DC /* TecnonutriFeed Cyan-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		6ACB4C9F1F3982E1005133E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */,
+				6ACB4C9E1F3982E1005133E7 /* Tecnutri Feed.app */,
 				6ACB4CB51F3982E1005133E7 /* TecnonutriFeedTests.xctest */,
 				6ACB4CC01F3982E1005133E7 /* TecnonutriFeedUITests.xctest */,
+				6A6D59441F3F9BC600F744DC /* TecnonutriFeed Cyan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +387,9 @@
 				5FD6253DBE1E192A3C98BAB9 /* Presentation */,
 				5FD6217052A4EC459AC1D9BE /* Data */,
 				5FD62DC19D6102DAF007CBB0 /* Helper */,
+				6AE3A3191F3EB30B00D4725A /* Localizable.strings */,
+				5FD62CB7E488ED900E2B4129 /* Constants.swift */,
+				6AE3A32D1F3F11B300D4725A /* Images.xcassets */,
 			);
 			path = TecnonutriFeed;
 			sourceTree = "<group>";
@@ -307,6 +425,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A6D59131F3F9BC600F744DC /* TecnonutriFeed Cyan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6D59411F3F9BC600F744DC /* Build configuration list for PBXNativeTarget "TecnonutriFeed Cyan" */;
+			buildPhases = (
+				6A6D59151F3F9BC600F744DC /* Sources */,
+				6A6D59331F3F9BC600F744DC /* Frameworks */,
+				6A6D59351F3F9BC600F744DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TecnonutriFeed Cyan";
+			productName = TecnonutriFeed;
+			productReference = 6A6D59441F3F9BC600F744DC /* TecnonutriFeed Cyan.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ACB4CC91F3982E1005133E7 /* Build configuration list for PBXNativeTarget "TecnonutriFeed" */;
@@ -324,7 +459,7 @@
 			);
 			name = TecnonutriFeed;
 			productName = TecnonutriFeed;
-			productReference = 6ACB4C9E1F3982E1005133E7 /* TecnonutriFeed.app */;
+			productReference = 6ACB4C9E1F3982E1005133E7 /* Tecnutri Feed.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6ACB4CB41F3982E1005133E7 /* TecnonutriFeedTests */ = {
@@ -393,12 +528,13 @@
 				};
 			};
 			buildConfigurationList = 6ACB4C991F3982E1005133E7 /* Build configuration list for PBXProject "TecnonutriFeed" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 6ACB4C951F3982E1005133E7;
 			productRefGroup = 6ACB4C9F1F3982E1005133E7 /* Products */;
@@ -406,6 +542,7 @@
 			projectRoot = "";
 			targets = (
 				6ACB4C9D1F3982E1005133E7 /* TecnonutriFeed */,
+				6A6D59131F3F9BC600F744DC /* TecnonutriFeed Cyan */,
 				6ACB4CB41F3982E1005133E7 /* TecnonutriFeedTests */,
 				6ACB4CBF1F3982E1005133E7 /* TecnonutriFeedUITests */,
 			);
@@ -413,13 +550,34 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A6D59351F3F9BC600F744DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6D59361F3F9BC600F744DC /* Images.xcassets in Resources */,
+				6A6D59371F3F9BC600F744DC /* FeedItemDetailsHeaderView.xib in Resources */,
+				6A6D59381F3F9BC600F744DC /* LaunchScreen.storyboard in Resources */,
+				6A6D59391F3F9BC600F744DC /* FeedTableViewCell.xib in Resources */,
+				6A6D593A1F3F9BC600F744DC /* FeedItemDetailsFooterView.xib in Resources */,
+				6A6D593B1F3F9BC600F744DC /* Assets.xcassets in Resources */,
+				6A6D593C1F3F9BC600F744DC /* Localizable.strings in Resources */,
+				6A6D593D1F3F9BC600F744DC /* FoodTableViewCell.xib in Resources */,
+				6A6D593E1F3F9BC600F744DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ACB4C9C1F3982E1005133E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE3A32E1F3F11B300D4725A /* Images.xcassets in Resources */,
+				6A545E461F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib in Resources */,
 				6ACB4CAF1F3982E1005133E7 /* LaunchScreen.storyboard in Resources */,
 				6AC963571F3AB04F0010231D /* FeedTableViewCell.xib in Resources */,
+				6AE3A3231F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib in Resources */,
 				6ACB4CAC1F3982E1005133E7 /* Assets.xcassets in Resources */,
+				6AE3A3171F3EB30B00D4725A /* Localizable.strings in Resources */,
+				6AE3A31B1F3EC2F400D4725A /* FoodTableViewCell.xib in Resources */,
 				5FD628A7F1A706841C5D84F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +612,7 @@
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -463,6 +622,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,6 +690,7 @@
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -539,6 +700,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -566,28 +728,77 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A6D59151F3F9BC600F744DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6D59161F3F9BC600F744DC /* AppDelegate.swift in Sources */,
+				6A6D59171F3F9BC600F744DC /* FeedTableViewCell.swift in Sources */,
+				6A6D59181F3F9BC600F744DC /* FeedItemDetailsViewController.swift in Sources */,
+				6A6D59191F3F9BC600F744DC /* TecnonutriFeed.xcdatamodeld in Sources */,
+				6A6D591A1F3F9BC600F744DC /* FeedItem.swift in Sources */,
+				6A6D591B1F3F9BC600F744DC /* FoodTableViewCell.swift in Sources */,
+				6A6D591C1F3F9BC600F744DC /* Profile.swift in Sources */,
+				6A6D591D1F3F9BC600F744DC /* FeedPresenter.swift in Sources */,
+				6A6D591E1F3F9BC600F744DC /* MainViewController.swift in Sources */,
+				6A6D591F1F3F9BC600F744DC /* ApiClient.swift in Sources */,
+				6A6D59201F3F9BC600F744DC /* FeedItemManagerAPI.swift in Sources */,
+				6A6D59211F3F9BC600F744DC /* FeedViewController.swift in Sources */,
+				6A6D59221F3F9BC600F744DC /* FeedItemDetailsHeaderView.swift in Sources */,
+				6A6D59231F3F9BC600F744DC /* FeedItemManagerDB.swift in Sources */,
+				6A6D59241F3F9BC600F744DC /* FeedDisplayAction.swift in Sources */,
+				6A6D59251F3F9BC600F744DC /* Result.swift in Sources */,
+				6A6D59261F3F9BC600F744DC /* UIViewContoller-Alert.swift in Sources */,
+				6A6D59271F3F9BC600F744DC /* FeedItemManager.swift in Sources */,
+				6A6D59281F3F9BC600F744DC /* LikeButton.swift in Sources */,
+				6A6D59291F3F9BC600F744DC /* ViewSwitcher.swift in Sources */,
+				6A6D592A1F3F9BC600F744DC /* FeedItemDetailsFooterView.swift in Sources */,
+				6A6D592B1F3F9BC600F744DC /* FeedSwitcher.swift in Sources */,
+				6A6D592C1F3F9BC600F744DC /* Food.swift in Sources */,
+				6A4AD02F1F3FB05700FAEA2A /* Theme.swift in Sources */,
+				6A6D592D1F3F9BC600F744DC /* FeedItemDetailsPresenter.swift in Sources */,
+				6A6D592E1F3F9BC600F744DC /* FeedItemDetailsDisplayAction.swift in Sources */,
+				6A6D592F1F3F9BC600F744DC /* FeedItemLikeDislikeAction.swift in Sources */,
+				6A6D59301F3F9BC600F744DC /* Constants.swift in Sources */,
+				6A6D59311F3F9BC600F744DC /* FeedLoadPageAction.swift in Sources */,
+				6A6D59321F3F9BC600F744DC /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ACB4C9A1F3982E1005133E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6ACB4CA21F3982E1005133E7 /* AppDelegate.swift in Sources */,
 				6AC963561F3AB04F0010231D /* FeedTableViewCell.swift in Sources */,
-				6A545E421F3C1CB400DBC713 /* ItemDetailsViewController.swift in Sources */,
+				6A545E421F3C1CB400DBC713 /* FeedItemDetailsViewController.swift in Sources */,
 				6ACB4CAA1F3982E1005133E7 /* TecnonutriFeed.xcdatamodeld in Sources */,
 				5FD62825E3BFEC7A19F7E411 /* FeedItem.swift in Sources */,
+				6AE3A30E1F3E2F1000D4725A /* FoodTableViewCell.swift in Sources */,
 				5FD62D38C8DE5B422016EB9C /* Profile.swift in Sources */,
 				5FD62D629F2E42AD605211C6 /* FeedPresenter.swift in Sources */,
 				5FD62E5DDBFCBF9F886E1B59 /* MainViewController.swift in Sources */,
 				5FD622283F765E3E3F8006DE /* ApiClient.swift in Sources */,
 				5FD62EFBA8CAF4CF00E3E650 /* FeedItemManagerAPI.swift in Sources */,
 				6AC9635B1F3B74D80010231D /* FeedViewController.swift in Sources */,
+				6A545E441F3C2F1C00DBC713 /* FeedItemDetailsHeaderView.swift in Sources */,
 				5FD626D41AA4E84D19C6413B /* FeedItemManagerDB.swift in Sources */,
 				5FD6230A84A99AD07C77F9B9 /* FeedDisplayAction.swift in Sources */,
 				5FD62D8068476BED4D240164 /* Result.swift in Sources */,
 				5FD6267AAF588E6F7F395374 /* UIViewContoller-Alert.swift in Sources */,
 				5FD62FEE83867E9FCDC36FCF /* FeedItemManager.swift in Sources */,
+				6AE3A3111F3E91C300D4725A /* LikeButton.swift in Sources */,
 				5FD62C7F63960804081BD3AE /* ViewSwitcher.swift in Sources */,
+				6AE3A30B1F3CF3A800D4725A /* FeedItemDetailsFooterView.swift in Sources */,
 				5FD62B1BC7BCFCBA7161E553 /* FeedSwitcher.swift in Sources */,
+				5FD62EE1F94DE3ACC909F69C /* Food.swift in Sources */,
+				5FD6294F91CDB32A8CED0038 /* FeedItemDetailsPresenter.swift in Sources */,
+				5FD627EFF431F4B0943D205B /* FeedItemDetailsDisplayAction.swift in Sources */,
+				5FD62B73A82D6EFD6E5FF8DA /* FeedItemLikeDislikeAction.swift in Sources */,
+				5FD629C4F5F75214D6C47C23 /* Constants.swift in Sources */,
+				6A02C5791F3FAEA5009C16DD /* Theme.swift in Sources */,
+				5FD623955DFA1A949D9421E6 /* FeedLoadPageAction.swift in Sources */,
+				5FD626300F8E5C8FA790A8FE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,13 +850,75 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		6AE3A3191F3EB30B00D4725A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A3181F3EB30B00D4725A /* Base */,
+				6AE3A31A1F3EB32000D4725A /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6AE3A31D1F3EC2F400D4725A /* FoodTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A31E1F3EC2F900D4725A /* Base */,
+				6AE3A3201F3EC32900D4725A /* pt-BR */,
+				6AE3A3221F3EC38100D4725A /* en */,
+			);
+			name = FoodTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		6AE3A3251F3EC3EF00D4725A /* FeedItemDetailsFooterView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A3241F3EC3EF00D4725A /* Base */,
+				6AE3A3271F3EC3F000D4725A /* en */,
+				6AE3A3291F3EC3F100D4725A /* pt-BR */,
+			);
+			name = FeedItemDetailsFooterView.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A6D59421F3F9BC600F744DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Cyan";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-Cyan";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "TecnonutriFeed Cyan-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D THEME_CYAN";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A6D59431F3F9BC600F744DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Cyan";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-Cyan";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "TecnonutriFeed Cyan-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D THEME_CYAN";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6ACB4CC71F3982E1005133E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -697,6 +970,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -739,27 +1013,31 @@
 		};
 		6ACB4CCA1F3982E1005133E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 948C433C5548D20D06BC7C11 /* Pods-TecnonutriFeed.debug.xcconfig */;
+			baseConfigurationReference = 3789C13107D1D3B8E84223BB /* Pods-TecnonutriFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tecnutri Feed";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6ACB4CCB1F3982E1005133E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 959D3A94F796FBFD16FBA0B8 /* Pods-TecnonutriFeed.release.xcconfig */;
+			baseConfigurationReference = 567DE5A738AD9852DFA06AB4 /* Pods-TecnonutriFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tecnutri Feed";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -822,6 +1100,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A6D59411F3F9BC600F744DC /* Build configuration list for PBXNativeTarget "TecnonutriFeed Cyan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6D59421F3F9BC600F744DC /* Debug */,
+				6A6D59431F3F9BC600F744DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6ACB4C991F3982E1005133E7 /* Build configuration list for PBXProject "TecnonutriFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

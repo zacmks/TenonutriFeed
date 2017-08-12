@@ -7,14 +7,17 @@ import UIKit
 
 extension UIViewController {
 
-    func presentAlert(withTitle title:String, message: String) {
-//        TODO translation
-        presentAlert(withTitle: title, message: message, button: "Dismiss")
+    func presentAlert(withTitle title: String, message: String) {
+        presentAlert(withTitle: title, message: message, button: NSLocalizedString("Dismiss", comment: ""))
     }
 
-    func presentAlert(withTitle title:String, message: String, button: String) {
+    func presentAlert(withTitle title: String, message: String, button: String) {
+        presentAlert(withTitle: title, message: message, button: button, handler: nil)
+    }
+
+    func presentAlert(withTitle title: String, message: String, button: String, handler: ((UIAlertAction) -> Void)?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: button, style: .cancel, handler: nil))
-        present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: button, style: .cancel, handler: handler))
+        present(alert, animated: true)
     }
 }

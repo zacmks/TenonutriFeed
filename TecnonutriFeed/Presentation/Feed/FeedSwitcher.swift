@@ -28,10 +28,10 @@ class FeedViewSwitcherImpl: FeedViewSwitcher {
     }
 
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //            TODO configure according to the item detail
-//        if let itemDetailsViewController = segue.destination as? ItemDetailsViewController {
-////            TODO configure according to the item detail
-////            itemDetailsViewController.configurator = ItemDetailsConfiguratorImplementation(feedItem: feedItem)
-//        }
+        if let itemDetailsViewController = segue.destination as? FeedItemDetailsViewController {
+            itemDetailsViewController.setup(feedItem: feedItem)
+//            TODO configure according to the item detail
+//            itemDetailsViewController.configurator = ItemDetailsConfiguratorImplementation(feedItem: feedItem)
+        }
     }
 }

@@ -6,15 +6,13 @@
 import Foundation
 
 typealias FetchFeedItemsEntityManagerCompletionHandler = (_ feedItems: Result<[FeedItem]>) -> Void
-// TODO LIKE
-//typealias AddBookEntityGatewayCompletionHandler = (_ books: Result<Book>) -> Void
-//typealias DeleteBookEntityGatewayCompletionHandler = (_ books: Result<Void>) -> Void
+typealias FetchFeedItemDetailsEntityManagerCompletionHandler = (_ feedItems: Result<FeedItem>) -> Void
 
 protocol FeedItemManager {
     func fetchFeedItems(completionHandler: @escaping FetchFeedItemsEntityManagerCompletionHandler)
-//    TODO LIKE
-//    func add(parameters: AddBookParameters, completionHandler: @escaping AddBookEntityGatewayCompletionHandler)
-//    func delete(book: Book, completionHandler: @escaping DeleteBookEntityGatewayCompletionHandler)
+    func fetchFeedItemDetails(feedItem: FeedItem, completionHandler: @escaping FetchFeedItemDetailsEntityManagerCompletionHandler)
+    func likeDislikeFeedItem(feedItem: FeedItem, completionHandler: @escaping (Result<FeedItem>) -> Void)
+    func fetchFeedItemsForPage(timestamp: Int64, page: Int, completionHandler: @escaping (Result<[FeedItem]>) -> Void)
 }
 
 class FeedItemManagerImpl: FeedItemManager {
@@ -29,21 +27,47 @@ class FeedItemManagerImpl: FeedItemManager {
 
     func fetchFeedItems(completionHandler: @escaping (Result<[FeedItem]>) -> Void) {
         feedItemManagerAPI.fetchFeedItems { (result) in
-            self.handleFetchBooksApiResult(result, completionHandler: completionHandler)
+            self.handleFetchFeedItemsApiResult(result, completionHandler: completionHandler)
         }
     }
 
-    fileprivate func handleFetchBooksApiResult(_ result: Result<[FeedItem]>, completionHandler: @escaping (Result<[FeedItem]>) -> Void) {
+    fileprivate func handleFetchFeedItemsApiResult(_ result: Result<[FeedItem]>, completionHandler: @escaping (Result<[FeedItem]>) -> Void) {
         switch result {
         case let .success(feedItems):
-//            TODO save
-//            feedItemManagerDB.save(books: books)
+//            TODO save, maybe
+//            feedItemManagerDB.save(feedItems: feedItems)
             completionHandler(result)
         case .failure(_):
             feedItemManagerDB.fetchFeedItems(completionHandler: completionHandler)
+            completionHandler(result)
         }
     }
 
+    func fetchFeedItemDetails(feedItem: FeedItem, completionHandler: @escaping (Result<FeedItem>) -> Void) {
+        feedItemManagerAPI.fetchFeedItemDetails(feedItem: feedItem) { (result) in
+            self.handleFetchFeedItemDetailsApiResult(result, feedItem: feedItem, completionHandler: completionHandler)
+        }
+    }
 
+    fileprivate func handleFetchFeedItemDetailsApiResult(_ result: Result<FeedItem>, feedItem: FeedItem, completionHandler: @escaping (Result<FeedItem>) -> Void) {
+        switch result {
+        case let .success(feedItem):
+//            TODO save, maybe
+//            feedItemManagerDB.save(feedItems: feedItems)
+            completionHandler(result)
+        case .failure(_):
+            feedItemManagerDB.fetchFeedItemDetails(feedItem: feedItem, completionHandler: completionHandler)
+            completionHandler(result)
+        }
+    }
+
+    func likeDislikeFeedItem(feedItem: FeedItem, completionHandler: @escaping (Result<FeedItem>) -> Void) {
+        feedItemManagerDB.likeDislikeFeedItem(feedItem: feedItem, completionHandler: completionHandler)
+//        completionHandler(completionHandler)
+    }
+
+
+    func fetchFeedItemsForPage(timestamp: Int64, page: Int, completionHandler: @escaping (Result<[FeedItem]>) -> Void) {
+        feedItemManagerAPI.fetchFeedItemsForPage(timestamp: timestamp, page: page, completionHandler: completionHandler)
+    }
 }
-
