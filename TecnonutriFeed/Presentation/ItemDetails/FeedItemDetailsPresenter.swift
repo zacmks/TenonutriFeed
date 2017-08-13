@@ -84,18 +84,18 @@ class FeedItemDetailsPresenterImpl: FeedItemDetailsPresenter {
     }
 
     func configure(header: FeedItemDetailsHeaderView) {
-        header.profileNameLabel.text = self.feedItem.profile.name
-        header.profileGoalLabel.text = self.feedItem.profile.general_goal
+        header.profileNameLabel.text = self.feedItem.profile?.name ?? ""
+        header.profileGoalLabel.text = self.feedItem.profile?.general_goal ?? ""
         header.profileImage.layer.cornerRadius = header.profileImage.bounds.size.width / 2.0;
-        if self.feedItem.profile.image != nil {
+        if let profileImage = self.feedItem.profile?.image {
             header.profileImage.backgroundColor = UIColor.lightGray
-            header.profileImage.yy_setImage(with: URL(string: self.feedItem.profile.image), options: YYWebImageOptions.setImageWithFadeAnimation)
+            header.profileImage.yy_setImage(with: URL(string: profileImage), options: YYWebImageOptions.setImageWithFadeAnimation)
         } else {
             header.profileImage.backgroundColor = UIColor.white
             header.profileImage.image = UIImage(named: "profile")
         }
-        if self.feedItem.image != nil {
-            header.itemImage.yy_setImage(with: URL(string: self.feedItem.image), options: YYWebImageOptions.setImageWithFadeAnimation)
+        if let itemImage = self.feedItem.image {
+            header.itemImage.yy_setImage(with: URL(string: itemImage), options: YYWebImageOptions.setImageWithFadeAnimation)
         }
 
         if self.feedItem.local_liked {

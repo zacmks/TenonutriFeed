@@ -113,8 +113,8 @@ class FeedPresenterImpl: FeedPresenter {
         let feedItem = feedItems[row] as FeedItem
         cell.bottomView.backgroundColor = Theme.primaryColor
 
-        cell.profileNameLabel.text = feedItem.profile.name
-        cell.profileGoalLabel.text = feedItem.profile.general_goal
+        cell.profileNameLabel.text = feedItem.profile?.name ?? ""
+        cell.profileGoalLabel.text = feedItem.profile?.general_goal ?? ""
         if let dateStr = feedItem.date {
             if let date = Utils.parseDate(dateStr: dateStr) {
                 cell.itemDateLabel.text = String(format: NSLocalizedString("%@ Meal", comment: ""), Utils.getDateStr(dateFrom: date))
@@ -127,16 +127,16 @@ class FeedPresenterImpl: FeedPresenter {
         cell.itemEnergyLabel.text = "\(feedItem.energy)kcal"
 
         cell.profileImage.layer.cornerRadius = cell.profileImage.bounds.size.width / 2.0;
-        if feedItem.profile.image != nil {
+        if let profileImage = feedItem.profile?.image {
             cell.profileImage.backgroundColor = UIColor.lightGray
-            cell.profileImage.yy_setImage(with: URL(string: feedItem.profile.image), options: YYWebImageOptions.setImageWithFadeAnimation)
+            cell.profileImage.yy_setImage(with: URL(string: profileImage), options: YYWebImageOptions.setImageWithFadeAnimation)
         } else {
             cell.profileImage.backgroundColor = UIColor.white
             cell.profileImage.image = UIImage(named: "profile")
         }
 
-        if feedItem.image != nil {
-            cell.itemImage.yy_setImage(with: URL(string: feedItem.image), options: YYWebImageOptions.setImageWithFadeAnimation)
+        if let itemImage = feedItem.image {
+            cell.itemImage.yy_setImage(with: URL(string: itemImage), options: YYWebImageOptions.setImageWithFadeAnimation)
         }
 
         cell.likeButton.isSelected = feedItem.local_liked
