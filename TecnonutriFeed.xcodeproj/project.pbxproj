@@ -458,6 +458,7 @@
 				6ACB4C9C1F3982E1005133E7 /* Resources */,
 				13A437AA16CE008185A88175 /* [CP] Embed Pods Frameworks */,
 				40EED4EAFB653318647C1C70 /* [CP] Copy Pods Resources */,
+				6A6735F01F4018C1003739EF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -671,6 +672,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TecnonutriFeedTests/Pods-TecnonutriFeedTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6A6735F01F4018C1003739EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 143ab6754fe033efb78f624a9501e04f1079c7ec d3b4023d724076f26da66cc4b6409e495f2dca7a405d7ba94e52239234711dc7";
 		};
 		AA23045FB3FE2C11FD67BF4C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
