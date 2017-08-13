@@ -33,6 +33,7 @@ class FeedPresenterImpl: FeedPresenter {
     var feedItems = [FeedItem]()
     var timestamp: Int64 = 0
     var page: Int = 0
+    var isLoadingPage = false
 
     var numberOfFeedItems: Int {
         return feedItems.count
@@ -76,12 +77,16 @@ class FeedPresenterImpl: FeedPresenter {
     }
 
     func loadNextPage() {
-        self.feedLoadPageAction.loadFeedItemsForPageAction(timestamp: timestamp, page: page) { (result) in
-            switch result {
-            case let .success(feedItems):
-                self.handleFeedItemsPageReceived(feedItems)
-            case let .failure(error):
-                self.handleFeedItemsError(error)
+        if !isLoadingPage {
+            isLoadingPage = true
+            self.feedLoadPageAction.loadFeedItemsForPageAction(timestamp: timestamp, page: page) { (result) in
+                switch result {
+                case let .success(feedItems):
+                    self.handleFeedItemsPageReceived(feedItems)
+                case let .failure(error):
+                    self.handleFeedItemsError(error)
+                }
+                self.isLoadingPage = false
             }
         }
     }
