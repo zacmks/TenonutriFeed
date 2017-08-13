@@ -78,6 +78,7 @@
 		6AB1C4621F401E4D00987237 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A4AD0311F3FC1F400FAEA2A /* GoogleService-Info.plist */; };
 		6AB1C4631F401E4D00987237 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A31D1F3EC2F400D4725A /* FoodTableViewCell.xib */; };
 		6AB1C4641F401E4D00987237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD6250E48CC86CC5697CBF4 /* Main.storyboard */; };
+		6AB1C46E1F40CCF400987237 /* FeedItemManagerDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB1C46D1F40CCF400987237 /* FeedItemManagerDBTest.swift */; };
 		6AC963561F3AB04F0010231D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */; };
 		6AC963571F3AB04F0010231D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */; };
 		6AC9635B1F3B74D80010231D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9635A1F3B74D80010231D /* FeedViewController.swift */; };
@@ -146,6 +147,7 @@
 		6A545E451F3C2F3600DBC713 /* FeedItemDetailsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemDetailsHeaderView.xib; sourceTree = "<group>"; };
 		6AB1C46B1F401E4D00987237 /* TecnonutriFeed Cyan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TecnonutriFeed Cyan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB1C46C1F401E4D00987237 /* TecnonutriFeed Cyan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; name = "TecnonutriFeed Cyan-Info.plist"; path = "/Users/isaac/Projects/iOS/TecnonutriFeed/TecnonutriFeed Cyan-Info.plist"; sourceTree = "<absolute>"; };
+		6AB1C46D1F40CCF400987237 /* FeedItemManagerDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemManagerDBTest.swift; sourceTree = "<group>"; };
 		6AC963541F3AB04F0010231D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		6AC963551F3AB04F0010231D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		6AC9635A1F3B74D80010231D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +295,14 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		5FD6280A5F8ABC23A2F3B11B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				6AB1C46D1F40CCF400987237 /* FeedItemManagerDBTest.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		5FD6282254ABA3DF4B866042 /* Action */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,11 +314,12 @@
 			path = Action;
 			sourceTree = "<group>";
 		};
-		5FD6286F949F1BEC9B15DBA0 /* Entities */ = {
+		5FD6286F949F1BEC9B15DBA0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				5FD6280A5F8ABC23A2F3B11B /* DB */,
 			);
-			path = Entities;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5FD628BB836C8CFA7005EFC1 /* DB */ = {
@@ -394,7 +405,7 @@
 			children = (
 				6ACB4CB91F3982E1005133E7 /* TecnonutriFeedTests.swift */,
 				6ACB4CBB1F3982E1005133E7 /* Info.plist */,
-				5FD6286F949F1BEC9B15DBA0 /* Entities */,
+				5FD6286F949F1BEC9B15DBA0 /* Data */,
 			);
 			path = TecnonutriFeedTests;
 			sourceTree = "<group>";
@@ -928,6 +939,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB1C46E1F40CCF400987237 /* FeedItemManagerDBTest.swift in Sources */,
 				6ACB4CBA1F3982E1005133E7 /* TecnonutriFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1139,6 +1151,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
@@ -1154,6 +1167,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TecnonutriFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeed;
@@ -1174,7 +1188,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecnonutriFeed.app/TecnonutriFeed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tecnutri Feed.app/Tecnutri Feed";
 			};
 			name = Debug;
 		};
@@ -1189,7 +1203,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacmks.TecnonutriFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecnonutriFeed.app/TecnonutriFeed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tecnutri Feed.app/Tecnutri Feed";
 			};
 			name = Release;
 		};

@@ -1,15 +1,14 @@
 //
-//  TecnonutriFeedTests.swift
-//  TecnonutriFeedTests
+//  FeedItemManagerDBTest.swift
+//  TecnonutriFeed
 //
-//  Created by Isaac Mitsuaki Saito on 08/08/2017.
+//  Created by Isaac Mitsuaki Saito on 13/08/2017.
 //  Copyright © 2017 Isaac Mitsuaki Saito. All rights reserved.
 //
 
 import XCTest
-@testable import Tecnutri_Feed
 
-class TecnonutriFeedTests: XCTestCase {
+class FeedItemManagerDBTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
