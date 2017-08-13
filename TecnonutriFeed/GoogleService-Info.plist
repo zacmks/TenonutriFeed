@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>422824152740-k49v8rdtb6kl1oijlv6dkabcnf69f9n9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.422824152740-k49v8rdtb6kl1oijlv6dkabcnf69f9n9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAZcZ8yRiHIqYuoipv-H2wE7hCJho9_cY0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>422824152740</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zacmks.TecnonutriFeed</string>
+	<key>PROJECT_ID</key>
+	<string>tecnonutri-feed-c5850</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tecnonutri-feed-c5850.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:422824152740:ios:2f0c5f72119abedd</string>
+	<key>DATABASE_URL</key>
+	<string>https://tecnonutri-feed-c5850.firebaseio.com</string>
+</dict>
+</plist>

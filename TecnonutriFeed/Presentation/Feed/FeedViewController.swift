@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import MoPub
+import Firebase
 
-class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FeedView {
+class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MPAdViewDelegate, FeedView {
 
     @IBOutlet weak var tableView: UITableView!
+
     var presenter: FeedPresenter!
 
     override func viewDidLoad() {
@@ -38,7 +41,48 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.tableView.refreshControl = refreshControl
 
         presenter.viewDidLoad()
+        // TODO fetchConfig() and loadAds() to better packages?
+        fetchConfig()
     }
+
+// TODO fetchConfig() and loadAds() to better packages?
+    func fetchConfig() {
+#if DEBUG
+        RemoteConfig.remoteConfig().configSettings = RemoteConfigSettings(developerModeEnabled: true)!
+#endif
+        RemoteConfig.remoteConfig().setDefaults(Config.defaultValues)
+        RemoteConfig.remoteConfig().fetch(withExpirationDuration: 0) { (status, error) in
+            guard error == nil else {
+                print("Error fetching remote config: \(error)")
+                self.loadAds()
+                return
+            }
+
+            let remoteConfig = RemoteConfig.remoteConfig()
+            remoteConfig.activateFetched()
+            let showAds = remoteConfig["show_ads"].boolValue ?? true
+            if (showAds) {
+                self.loadAds()
+            }
+        }
+    }
+
+// TODO fetchConfig() and loadAds() to better packages?
+    func loadAds() {
+        let adSize: CGSize = UI_USER_INTERFACE_IDIOM() == .pad ? MOPUB_LEADERBOARD_SIZE : MOPUB_BANNER_SIZE
+        let bannerAdView = MPAdView.init(adUnitId: "bd5ab3e9fa8c43b88e663b6e17e4c1e5", size: adSize)
+        bannerAdView?.delegate = self
+        var adFrame: CGRect = CGRect.zero
+        adFrame.size.width = adSize.width
+        adFrame.size.height = adSize.height
+        adFrame.origin.x = (UIScreen.main.bounds.width - adSize.width) / 2.0
+        adFrame.origin.y = UIScreen.main.bounds.height / 2.0
+        adFrame.origin.y = view.bounds.height - adSize.height
+        bannerAdView!.frame = adFrame
+        self.view?.addSubview(bannerAdView!)
+        bannerAdView?.loadAd()
+    }
+
 
     func loadData() {
         presenter.loadData()
@@ -84,5 +128,9 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func displayError(title: String, message: String) {
         presentAlert(withTitle: title, message: message)
+    }
+
+    func viewControllerForPresentingModalView() -> UIViewController! {
+        return self
     }
 }

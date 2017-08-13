@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MPAdView.h"
+#import "MoPub/MPAdView.h"
 
 @protocol MPBannerAdapterDelegate;
 @class MPAdConfiguration;

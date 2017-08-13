@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="3Gz-hm-xLu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYb-9B-bdu" customClass="MainViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYb-9B-bdu" customClass="MainViewController" customModule="TecnonutriFeed_Cyan" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Hez-gf-B4G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -29,7 +29,7 @@
         <!--Tecnonutri Feed-->
         <scene sceneID="u3v-D5-VXB">
             <objects>
-                <viewController id="FTo-Dx-Z6e" customClass="FeedViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FTo-Dx-Z6e" customClass="FeedViewController" customModule="TecnonutriFeed_Cyan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMV-Dh-lTB"/>
                         <viewControllerLayoutGuide type="bottom" id="HDC-Gr-Mdz"/>
@@ -68,7 +68,7 @@
         <!--Feed Item Details View Controller-->
         <scene sceneID="Alg-uY-2Xi">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lXV-nC-9lt" customClass="FeedItemDetailsViewController" customModule="TecnonutriFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lXV-nC-9lt" customClass="FeedItemDetailsViewController" customModule="TecnonutriFeed_Cyan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OS3-4a-pRJ"/>
                         <viewControllerLayoutGuide type="bottom" id="pln-PF-oJ1"/>
